@@ -326,6 +326,7 @@ li{
 	box-shadow: inset 0px 0px 10px white;
 	margin-top: -2px;
 }
+
 section{
 	width: 713px;
 	background: white;
@@ -407,6 +408,7 @@ p{
 
 #main-menu > li {
 	display: inline-block;
+        border-radius: 7px;
 /*	margin-left: 30px;
 	padding: 2px 0;*/
 }
@@ -476,6 +478,7 @@ ul.sub-menu > li > a:hover {
         color: #FF6600;
 	text-decoration: none;
 	text-shadow: 0 0 13px white;
+        
 }
 
 ul.sub-menu > li:first-child {
@@ -581,3 +584,4 @@ p {
 	font-weight: normal;
 	color: #333;
 }
+

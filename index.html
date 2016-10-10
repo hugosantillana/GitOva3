@@ -8,8 +8,27 @@
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <title>Ova 3</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <!--<link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsiveslides.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/responsiveslides.js"></script>
+  <script>
+    
+    $(function () {    
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+        
+      });
+
+    });
+  </script>
      </head>
     <body>	
         <Div id="contenidos">
@@ -76,16 +95,34 @@
     <h2>Diseño de Sitios Web - UNAD ECBTI</h2>
     <div id="apDiv20"><a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a></div>
                 <article>
-                    <figure>
-                        <img src="img/diseno_web.jpg" alt="Diseno">
-                  	</figure>
+                    
+                    <!-- Slideshow 4 -->
+                    <div class="callbacks_container">
+                      <ul class="rslides" id="slider4">
+                          <li>
+                              <img src="img/1.jpg" alt="" class="noborder">
+                          <p class="caption">Seguridad en dispositivos</p>
+                        </li>
+                        <li>
+                            <img src="img/2.jpg" alt="" class="noborder">
+                          <p class="caption">Seguridad de aplicaciones</p>
+                        </li>
+                        <li>
+                            <img src="img/3.jpg" alt="" class="noborder">
+                          <p class="caption">Seguridad de usuarios</p>
+                        </li>
+                      </ul>
+                    </div>
                     <p>
-                        Propósitos del curso:<br>
-                        • Que el estudiante se fundamente teóricamente sobre las generalidades básicas del Diseño Web.<br>
-                        • Que el estudiante pueda utilizar de forma correcta los lenguajes HTML5 y CSS3 para aplicarlos en la solución de problemas de construcción de Sitios Web.<br>
-                        • Que el estudiante implemente servicios y sitios web a través de los sistemas gestores de contenidos CMS y LMS libres más usados en la actualidad.<br>
+                       La seguridad informática es el área que tiene como función proteger la infraestructura y la información así como los datos contenidos en esta. 
                     </p>
-      			</article>
+                    <p>
+                        Tener un ordenador con conexión a Internet hoy en día está presente en prácticamente todas las empresas independientemente de su tamaño.
+                    </p>
+                    <p>
+                        Actualmente la seguridad informática es indispensable para el crecimiento de cualquier organización o institución, pública o privada.
+                    </p>
+      		</article>
     </section>
     <aside> 
                 <div id="apDiv5">
@@ -111,6 +148,5 @@
     	</Footer>
    </body>
     <script src="js/modernizr.js"></script>   
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/jquery-2.1.1.js"></script>   
+    <script src="js/prefixfree.min.js"></script>       
 </html>
