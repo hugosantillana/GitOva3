@@ -8,11 +8,28 @@
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <title>Ova 3</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <!--<link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/windowsmodal.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('#open').click(function(){
+                $('#popup').fadeIn('slow');
+                $('.popup-overlay').fadeIn('slow');
+                $('.popup-overlay').height($(window).height());
+                return false;
+            });
+
+            $('#close').click(function(){
+                $('#popup').fadeOut('slow');
+                $('.popup-overlay').fadeOut('slow');
+                return false;
+            });
+        });
+        </script>
      </head>
     <body>	
-        <Div id="contenidos">
+        <div id="contenidos">
             <header>
                 <div id="apDiv1"><img src="img/banner.jpg" width="1000" height="168">
                   <div id="apDiv24">OVA 3 - Tecnología en Desarrollo de Software</div>
@@ -22,11 +39,11 @@
     		<nav id="navigation">
                         <ul id="main-menu">
                           <li><a href="index.html" class="menu">Inicio</a></li>
-                          <li class="parent"><a href="lecturas.html" class="menu">Lecturas</a>
+                          <li class="parent"><a href="#" class="menu">Lecturas</a>
                               <ul class="sub-menu">
                                   <li><a href="lectura1.html">Lectura 1</a></li>
                                   <li><a href="lectura2.html">Lectura 2</a></li>
-                                  <li><a href="lectura3.html">Lectura 3</a></li>                                        
+                                  <li><a href="lectura3.html">Lectura 3</a></li>                                         
                                 </ul>
                           </li>
                           <li><a href="multimedia.html" class="menu">Multimedia</a></li>
@@ -34,7 +51,7 @@
                               <ul class="sub-menu">
                                   <li><a href="actividad1.html">Actividad 1</a></li>
                                   <li><a href="actividad2.html">Actividad 2</a></li>
-                                  <li><a href="actividad3.html">Actividad 3</a></li>   
+                                  <li><a href="actividad3.html">Actividad 3</a></li>                                        
                                   <li><a href="actividad4.html">Actividad 4</a></li>
                                   <li><a href="actividad5.html">Actividad 5</a></li>
                               </ul>
@@ -78,71 +95,11 @@
     <h2>Diseño de Sitios Web - UNAD ECBTI</h2>
     <div id="apDiv20"><a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a></div>
                 <article>
-                    
-                    <p>
-                    <h2>Conceptos básicos de Seguridad de la información.</h2>
-                    </p>
-                    <p>Cuando hablamos de información estamos hablando de un insumo muy importante no solo para las compañías sino también para las  entidades prestadores de servicios y demás, por ello estos datos deben ser protegidos de la manera adecuada  para obtener excelentes ganancias y funcionalidad correcta de dichas organizaciones. Por ello se deben establecer prioridades y un plan de acción que de manera estratégica nos dé un control de esta importante información (datos).</p>
-                    <p>La finalidad es  que la información no sea susceptible de pérdidas, alteraciones o divulgación no autorizada. Por lo tanto debemos garantizar  su confidencialidad, integridad y disponibilidad mediante la implementación de controles.</p>
-                    <p>
-                        Teniendo en cuenta lo anterior veremos unos conceptos relevantes que nos ayudaran a cumplir  con lo ya mencionado los cuales son:
-                        
-                    </p>
-                    <h2>Integridad</h2>
-                    <p>
-                        
-                        Este concepto se centra en que  los datos no deben ser modificados por personas no autorizadas.
-                    </p>
-                    <h2>Confidencialidad</h2>
-                    <p>
-                    
-                    Es importante tener muy claro de manera enfática que las personas que únicamente pueden utilizar estos datos están autorizadas.se debe tener presente que cuando transmitimos datos de una forma u otra se puede presentar que dicha información  “sea interceptada y copiada: las líneas "pinchadas" la intercepción o recepción electromagnética no autorizada o la simple intrusión directa en los equipos donde la información está físicamente almacenada”.
-                    </p>
-                    <h2>Disponibilidad</h2>
-                    <p>
-                    Nos habla de que dicha información debe ser del acceso a los usuarios que les corresponde utilizarla.  Es muy importante que la información pueda ser recuperada en el momento que se necesite.
-                    
-                    </p>
-                    <h2>No repudio (irrefutabilidad)</h2>
-                    <p>
-                        Este concepto ancla la información a un autor específico evitando que sea rechazada su autoría  y llevando un control.
-                    </p>
-                    <h2>El riesgo</h2>
-                    <p>
-                        El riesgo está siempre presente independiente de las medidas que tomemos, solo podemos hablar de niveles de seguridad hasta tener una seguridad que nos dé una tranquilidad momentánea teniendo presente que existe la forma de que sea vulnerada.
-                    </p>
-                    <h2>Protección de la información</h2>
-                    <p>
-                        Es importante saber que lo que más se expone en una organización a un ataque son los datos  ya sea por medio del hardware o el software, para ello se deben tener técnicas para que el sistema confidencial, íntegro y esté disponible. 
-                    </p>
-                    <h2>Autenticación</h2>
-                    <p>
-                        Muy útil para evitar suplantaciones.
-                    </p>
-                    <h2>Situaciones de fuerza mayor</h2>
-                    <p>
-                        Ya sea por desastres naturales o por negligencia, descuido, ignorancia o cualquier otro tipo de mala práctica se pueden tener inconvenientes grabes de seguridad en la información.
-                    </p>
-                    <h2>Las técnicas de respaldo y los sistemas redundantes</h2>
-                    <p>
-                        Son técnicas muy útiles para tener respaldo (backup de los datos), por que los usuarios pueden accidentalmente borrar la información.
-                    </p>
-                    <h2>Tolerancia a fallos</h2>
-                    <p>
-                        Esta nos facilita un sistema que tiene la capacidad de responder por una falla en el hardware o por cortes inesperados de energía eléctrica gracias a las UPS y grupos electrógenos.
-                    </p>
-                    <h2>Virus y Troyanos</h2>
-                    <p>
-                        Programas  maliciosos escondidos en ejecutables (con extensión .exe, .com o .bat), que por lo general el usuario confiadamente accede a ellos.
-                    </p>
-                    <h2>Métodos de Protección Contra Intrusiones Remotas</h2>
-                    <p>
-                        Existe la  “posibilidad de ataques más sofisticados para lo cual se hace necesario el uso de software del tipo cortafuego (firewalls) o detectores de Intrusiones, que monitorean los intentos de introducirse a un sistema sin la debida autorización”.
-“Desde el punto de vista estratégico de la seguridad de la información en una organización, toda planificación comenzará por un análisis de riesgos cuyos principales resultados serán: tipos de activos con los que cuenta la organización (inventario), qué vulnerabilidades incorporan, qué amenazas se ciernen sobre dichos activos, y qué salvaguardas se han de considerar para proteger dichos activos. Esto sería un análisis cualitativo, que es el que mayoritariamente se practica. Un análisis cuantitativo intentará obtener una magnitud que nos informe del estado de nuestros activos. Suelen estar asociadas a los conceptos de “Esperanza de Pérdida Anual” o “Coste Anual Estimado”. 
-
-                    </p>
-                    
-      			</article>
+                <h2>Seguridad Informática</h2>    
+                <p>
+                    <iframe src='https://www.educaplay.com/es/recursoseducativos/2584672/html5/seguridad_informatica.htm' width='100%' height='690' frameborder='0'></iframe>
+                </p>
+      		</article>
     </section>
     <aside> 
                 <div id="apDiv5">
@@ -166,8 +123,17 @@
 		  <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>
 		  <div id="apDiv27">CEAD Dosquebradas - 2016</div>
     	</Footer>
+        </div>
+        <!--<div id="popup" style="display: none;">
+            <div class="content-popup">
+                <div class="close"><a href="#" id="close"><img src="img/close.png"/></a></div>
+                <div>
+                   
+                    <iframe src="http://hexgl.bkcore.com/play/" height="450" width="600"></iframe>
+                </div>
+            </div>
+        </div>-->
    </body>
     <script src="js/modernizr.js"></script>   
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/jquery-2.1.1.js"></script>   
+    <script src="js/prefixfree.min.js"></script>       
 </html>
